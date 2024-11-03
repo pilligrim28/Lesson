@@ -1,0 +1,205 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        printThreeWords();
+
+    }
+
+    static void printThreeWords() {
+        System.out.println("Orange,\nBanana,\nApple");
+    }
+
+}
+class SummCheckSign {
+    public static void main(String[] args) {
+        checkSumSign();
+    }
+
+    static void checkSumSign() {
+        try (Scanner in = new Scanner(System.in)) {
+            System.out.print("Введите число а:");
+
+            int a = in.nextInt();
+            System.out.print("Введите число b:");
+            int b = in.nextInt();
+            if (a + b >= 0) {
+                System.out.println("Сумма положительная");
+            } else {
+                System.out.println("Сумма отрицательная");
+            }
+
+        }
+    }
+}
+class PrintColor{
+ public static final String ANSI_RED = "\u001B[41m";
+public static final String ANSI_GREEN = "\u001B[42m";
+public static final String ANSI_YELLOW = "\u001B[43m";
+    private static final String ANSI_RESET = "\u001B[0m";
+
+    public static void main(String[] args) {
+       printColor();
+    }
+
+    static void printColor(){
+         try (Scanner in = new Scanner(System.in)) {
+             System.out.print("Введите число: ");
+             int value = in.nextInt();
+             if (value <= 0){
+                 System.out.println(ANSI_RED +"Красный" + ANSI_RESET);
+             }
+             if (value == 100 & value > 0) {
+                 System.out.println(ANSI_YELLOW +"Жёлтый" + ANSI_RESET);
+             }
+             else {
+                 System.out.println(ANSI_GREEN +"Зеленый" + ANSI_RESET);
+
+             }
+         }
+
+    }
+}
+
+class CompareNumbers {
+    public static void main(String[] args) {
+        compareNumbers();
+    }
+
+    static void compareNumbers() {
+        try (Scanner in = new Scanner(System.in)) {
+            System.out.print("Введите число a: ");
+            int a = in.nextInt();
+            System.out.print("Введите число b: ");
+            int b = in.nextInt();
+
+
+            if (a>=b) {
+                System.out.println("a >= b");
+            } else {
+                System.out.println("a < b");
+            }
+        }
+    }
+}
+class InputNumber {
+    public static void main(String[] args) {
+        try (Scanner in = new Scanner(System.in)) {
+            System.out.print("Введите число a: ");
+            int a = in.nextInt();
+            System.out.print("Введите число b: ");
+            int b = in.nextInt();
+            int c = a + b;
+             if (c>=10 && c<=20){
+                 System.out.println(true);
+             }
+             else {
+                 System.out.println(false);
+             }
+
+        }
+    }
+}
+class InputNumberOtr {
+    public static void main(String[] args) {
+        try (Scanner in = new Scanner(System.in)) {
+            System.out.print("Введите число a: ");
+            int a = in.nextInt();
+
+             if (a>=0){
+                 System.out.println("Число положительное");
+             }
+             else {
+                 System.out.println("Число отрицательное");
+             }
+
+        }
+    }
+}
+class InputNumberPol {
+    public static void main(String[] args) {
+        try (Scanner in = new Scanner(System.in)) {
+            System.out.print("Введите число a: ");
+            int a = in.nextInt();
+
+             if (a>=0){
+                 System.out.println(true);
+             }
+             else {
+                 System.out.println(false);
+             }
+
+        }
+    }
+}
+//Нужно будет здесь рапзобраться
+class TimesString {
+ public static void main(String[] args) {
+
+Scanner scan = new Scanner(System.in);
+     System.out.print("Введите слово или текст: ");
+     String st =scan.nextLine();
+
+     System.out.print("Введите количество строк: ");
+     int number = scan.nextInt();
+     for (int i=0; i<number; i++){
+         System.out.println(st);
+     }
+   }
+ }
+
+ class VisokGod{
+    public static void main (String[] args) {
+
+            Scanner scan = new Scanner(System.in);
+            System.out.print("Введите год: ");
+            int year = scan.nextInt();
+
+            if (year % 4 != 0) {
+                System.out.println(false);
+            }
+            else if (year % 400 == 0)
+            {
+                System.out.println(true);
+            }
+            else if (year % 100 == 0)
+            {
+                System.out.println(true);
+            }
+            else
+            {
+                System.out.println(true);
+            }
+
+        }
+    }
+    class VisokosGod2 {
+
+
+        public static boolean visokoGod(int year) {
+            int year = 0;
+            if (year % 4 != 0) {
+                return false;
+            } else if (year % 400 == 0) {
+                return true;
+            } else if (year % 100 == 0) {
+                return false;
+            } else {
+                return true;
+            }
+
+
+        }
+
+        public static void main(String[] args) {
+            Scanner scan = new Scanner(System.in);
+            System.out.print("Введите год: ");
+            int year = scan.nextInt();
+            visokoGod(year);
+        }
+    }
+
+
+
+
+
