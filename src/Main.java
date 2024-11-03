@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -173,7 +174,8 @@ Scanner scan = new Scanner(System.in);
 
         }
     }
-    class VisokosGod2 {
+   // Нужно проработать как сделать чтобы сработало в булиан
+/* class VisokosGod2 {
 
 
         public static boolean visokoGod(int year) {
@@ -198,7 +200,63 @@ Scanner scan = new Scanner(System.in);
             visokoGod(year);
         }
     }
+*/
+class MassiveArray {
+       public static void main(String[] args) {
+           int[] array = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
+           for (int i = 0; i < array.length; i++) {
+               if (array[i] == 0) {
+                   array[i] = 1;
+               }
+                 else if (array[i] == 1) {
+                       array[i] = 0;
+                   }
+               }
+           System.out.println(Arrays.toString(array));
+           }
 
+       }
+
+class MassiveArrayMen {
+       public static void main(String[] args) {
+           int[] array = {1,5,3,2,11,4,5,2,4,8,9,1};
+           for (int i = 0; i < array.length; i++) {
+               if (array[i] < 6) {
+                   array[i]=array[i] * 2;
+               }
+
+               }
+           System.out.println(Arrays.toString(array));
+           }
+
+       }
+
+class DiagonalKub {
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+            System.out.print("Введите X: ");
+            int x = scan.nextInt();
+            System.out.print("Введите y: ");
+            int y = scan.nextInt();
+
+
+        int[][] arr = new int[x][y];
+
+            for (int i = 0; i < arr.length; i++) {
+                arr[i][arr.length - i - 1] = 1;
+            }
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = 0; j < arr.length; j++) {
+                    arr[i][i] = 1;
+                    System.out.print(arr[i][j] + " ");
+                }
+                System.out.println();
+
+            }
+
+        }
+    }
 
 
 
