@@ -102,6 +102,20 @@ class InputNumber {
         }
     }
 }
+//Второе решение
+class InputNumber2 {
+    public static void main(String[] args) {
+        try (Scanner in = new Scanner(System.in)) {
+            System.out.print("Введите число a: ");
+            int a = in.nextInt();
+            System.out.print("Введите число b: ");
+            int b = in.nextInt();
+            int c = a + b;
+            System.out.println(c >= 10 && c <= 20);
+
+        }
+    }
+}
 class InputNumberOtr {
     public static void main(String[] args) {
         try (Scanner in = new Scanner(System.in)) {
@@ -258,7 +272,31 @@ class DiagonalKub {
 
         }
     }
+   class LenValue {
+       public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Введите длину: ");
+        int len = scan.nextInt();
+        System.out.print("Введите число: ");
+        int initialValue = scan.nextInt();
 
+           lenArray(len, initialValue);
+
+       }
+
+
+
+
+       public static void lenArray(int len, int initialValue) {
+
+           int[] arr = new int[len];
+           for (int i = 0; i < len; i++) {
+               arr[i] = initialValue;
+               System.out.print("[" + i + "]" + arr[i] + " ");
+           }
+
+       }
+   }
 
 
 
