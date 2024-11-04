@@ -51,7 +51,7 @@ public static final String ANSI_YELLOW = "\u001B[43m";
              if (value <= 0){
                  System.out.println(ANSI_RED +"Красный" + ANSI_RESET);
              }
-             if (value == 100 & value > 0) {
+             else if (value == 100 || value > 0) {
                  System.out.println(ANSI_YELLOW +"Жёлтый" + ANSI_RESET);
              }
              else {
