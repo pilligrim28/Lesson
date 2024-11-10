@@ -1,26 +1,23 @@
 package Lesson_2;
 
-import java.util.Scanner;
+import Lesson_2.Sotr.Persons;
+import Lesson_2.Sotr.Sotrudniki;
+
 
 public class Lesson_2 {
-    static class Sotrudnik{
-      public static String fio;
-       public static String doljnost;
-        public static String email;
-        public static double zarplata;
-      public static int age;
-    public static void main(String[] args) {
-         Scanner sc = new Scanner(System.in);
-        System.out.print("Введите ФИО Сотрудника: ");
-        fio = sc.nextLine();
-         System.out.print("Введите возраст сотрудника: ");
-         age = sc.nextInt();
 
 
+    public void main(String[] args) {
 
-        System.out.println("ФИО: "+ fio+ "\nВозраст: "+age);
-       }
+        Sotrudniki sotrudniki = new Sotrudniki();
     }
+}
 
-   }
+
+
+
+
+
+
+
 
