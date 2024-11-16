@@ -1,2 +1,4 @@
-package Lesson_4;public class MyArraySizeException {
+package Lesson_4;
+
+public class MyArraySizeException extends Throwable {
 }
